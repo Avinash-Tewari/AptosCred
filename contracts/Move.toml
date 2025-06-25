@@ -1,0 +1,29 @@
+[package]
+name = "AptosCred"
+version = "0.0.1"
+# Remove 'edition' line if previously added — it's not used in Move
+
+[addresses]
+aptoscred = "0x4f500264546703c0b6da8331ee138b9fbc7a41601c6bbeb0f1a73442669f27ff"
+std = "0x1"
+aptos_framework = "0x1"
+aptos_std = "0x1"
+aptos_token = "0x3"
+
+[dev-addresses]
+aptoscred = "0x42"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-stdlib"
+
+[dependencies.AptosToken]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-token"
